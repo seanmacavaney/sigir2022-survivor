@@ -64,8 +64,20 @@ If you want to double-check the values in Figure 1, you can run the following co
 $ bash figure_1.sh
 ```
 
-**Models**
+**Last-Mile Reproduction.**
 
-The versions of monoT5 that were trained on simulated (smaller) versions of MS MARCO are available on huggingface:
+We release the trained models using simulated versions of MS MARCO on Huggingface, allowing the reproduction of our ranked lists.
  - [`macavaney/monot5-base-msmarco-sim1`](https://huggingface.co/macavaney/monot5-base-msmarco-sim1)
  - [`macavaney/monot5-base-msmarco-sim5`](https://huggingface.co/macavaney/monot5-base-msmarco-sim5)
+
+These models are compatible with PyTerrier's [`MonoT5ReRanker`](https://github.com/terrierteam/pyterrier_t5):
+
+```python
+from pyterrier_t5 import MonoT5ReRanker
+reranker = MonoT5ReRanker(model='macavaney/monot5-base-msmarco-sim1')
+```
+
+To generate the ranked lists we use in the paper, use the following script:
+```bash
+$ bash figure_1_runs.sh
+```
