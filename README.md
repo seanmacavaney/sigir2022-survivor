@@ -84,7 +84,7 @@ $ bash figure_1_runs.sh
 
 ## Appendix
 
-The paper [A Non-Factoid Question-Answering Taxonomy](https://doi.org/10.1145/3477495.3531926) (Valeriia et al) was also published at SIGIR 2022.
+The paper [A Non-Factoid Question-Answering Taxonomy](https://doi.org/10.1145/3477495.3531926) (Bolotova et al) was also published at SIGIR 2022.
 
 As an analogue to Table 3, which demonstrated that different question types are more likely to survive in MS MARCO, we explore whether some question
 categories from the above taxonomy are more likely to survive in MS MARCO's annotation process than others.
