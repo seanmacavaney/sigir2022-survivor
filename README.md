@@ -102,6 +102,6 @@ The following table can be reproduced by running `app_nfcats.py`:
 | COMPARISON     |    430 |       215 | 50.0% |
 | EXPERIENCE     |    234 |       131 | 56.0% |
 
-We find that instruction-based questions are far more likely to be discarded (77%) than other question types and are therefore under-represented in
+We find that `INSTRUCTION` questions are far more likely to be discarded (77%) than other question types and are therefore under-represented in
 MS MARCO. This might be because instruction lists are not well-captured by MS MARCO's passage technique, or that individual passages do not capture
-a suffcient amount of the instructions. Meanwhile, EVIDENCE-BASED questions are far less likley to be discarded (39%) and are over-represented.
+a suffcient amount of the instructions. Meanwhile, `EVIDENCE-BASED` questions are far less likley to be discarded (39%) and are over-represented.
