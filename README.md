@@ -81,3 +81,27 @@ To generate the ranked lists we use in the paper, use the following script:
 ```bash
 $ bash figure_1_runs.sh
 ```
+
+## Appendix
+
+The paper [A Non-Factoid Question-Answering Taxonomy](https://doi.org/10.1145/3477495.3531926) (Valeriia et al) was also published at SIGIR 2022.
+
+As an analogue to Table 3, which demonstrated that different question types are more likely to survive in MS MARCO, we explore whether some question
+categories from the above taxonomy are more likely to survive in MS MARCO's annotation process than others.
+
+The following table can be reproduced by running `app_nfcats.py`:
+
+| Category       | Total | Discarded |     % |
+|----------------|-------|-----------|-------|
+| FACTOID        | 55216 |     24883 | 45.1% |
+| EVIDENCE-BASED | 35446 |     13657 | 38.5% |
+| INSTRUCTION    |  5727 |      4423 | 77.2% |
+| REASON         |  2487 |      1429 | 57.5% |
+| DEBATE         |  1075 |       554 | 51.5% |
+| NOT-A-QUESTION |   478 |       223 | 46.7% |
+| COMPARISON     |   430 |       215 | 50.0% |
+| EXPERIENCE     |   234 |       131 | 56.0% |
+
+We find that instruction-based questions are far more likely to be discarded (77%) than other question types and are therefore under-represented in
+MS MARCO. This might be because instruction lists are not well-captured by MS MARCO's passage technique, or that individual passages do not capture
+a suffcient amount of the instructions. Meanwhile, EVIDENCE-BASED questions are far less likley to be discarded (39%) and are over-represented.
