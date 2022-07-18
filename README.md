@@ -1,6 +1,6 @@
 # On Survivorship Bias in MS MARCO
 
-Online appendix for **Prashansa Gupta and Sean MacAvaney. _On Survivorship Bias in MS MARCO_. SIGIR 2022.**
+Online appendix for **Prashansa Gupta and Sean MacAvaney. _[On Survivorship Bias in MS MARCO](https://doi.org/10.1145/3477495.3531832)_. SIGIR 2022.**
 
 ## Section 3: Analysis of Discarded Queries
 
